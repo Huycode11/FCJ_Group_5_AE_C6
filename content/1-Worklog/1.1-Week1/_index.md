@@ -5,53 +5,57 @@ weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
-
 ### Week 1 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Get familiar with the learning environment and members of the First Cloud AI Journey program.
+* Learn the fundamentals of Cloud Computing and the AWS platform.
+* Understand the basic AWS services and resource management concepts.
+* Become familiar with AWS Management Console and AWS CLI.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+|------|------------|------------|------------|------------|
+| 2 | - Attend the FCAJ orientation session <br> - Get acquainted with team members <br> - Learn about the program regulations and learning roadmap | 17/04/2026 | 17/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 3 | - Learn the fundamentals of AWS <br> - Study the main AWS service categories: <br>&emsp;+ Compute <br>&emsp;+ Storage <br>&emsp;+ Networking <br>&emsp;+ Database <br>&emsp;+ Security & Identity | 18/04/2026 | 18/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 4 | - Create an AWS Free Tier Account <br> - Explore AWS Management Console <br> - Install AWS CLI on a local machine <br> - Configure Access Key and Secret Access Key | 19/04/2026 | 19/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 5 | - Learn Amazon EC2 fundamentals <br>&emsp;+ Instance Types <br>&emsp;+ Amazon Machine Image (AMI) <br>&emsp;+ Successfully completed five onboarding tasks and received AWS promotional credits <br>&emsp;+ Security Groups <br> - Learn about Elastic IP and SSH connection methods for EC2 | 20/04/2026 | 20/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 6 | - Practice launching an EC2 Instance <br> - Configure Security Groups <br> - Connect to EC2 via SSH <br> - Attach an EBS Volume and verify data storage functionality | 21/04/2026 | 21/04/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ### Week 1 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Understood the basic concepts of Cloud Computing and the benefits of cloud computing.
 
-* Successfully created and configured an AWS Free Tier account.
+* Learned the AWS service ecosystem including:
+  * Compute Services
+  * Storage Services
+  * Networking Services
+  * Database Services
+  * Security Services
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Successfully created and configured an AWS Free Tier account for learning and hands-on practice.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
+* Became familiar with AWS Management Console and learned how to access, search, and use AWS services through the management interface.
+
+* Successfully installed and configured AWS CLI including:
+  * Access Key ID
+  * Secret Access Key
   * Default Region
-  * ...
+  * Output Format
 
 * Used AWS CLI to perform basic operations such as:
+  * Checking AWS configuration information
+  * Listing available AWS Regions
+  * Viewing EC2 Instances
+  * Managing Key Pairs
+  * Monitoring service status
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Understood the architecture and operating principles of Amazon EC2.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Successfully launched and managed EC2 Instances on AWS.
+
+* Connected to EC2 Instances via SSH and performed basic Linux administration tasks.
+
+* Attached and managed EBS Volumes for EC2 Instances.
+
+* Successfully completed all planned learning activities and hands-on exercises for the first week.
