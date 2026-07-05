@@ -6,10 +6,6 @@ chapter: false
 pre: " <b> 1.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 ### Mục tiêu tuần 1:
 
 * Làm quen với môi trường học tập và các thành viên trong chương trình First Cloud AI Journey.
@@ -21,11 +17,11 @@ pre: " <b> 1.1. </b> "
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 |------|------------|------------|------------|------------|
-| 2 | - Tham gia buổi giới thiệu chương trình FCAJ <br> - Làm quen với các thành viên trong nhóm <br> - Tìm hiểu nội quy, quy định và lộ trình học tập | 17/04/2026 | 17/04/2026 | https://cloudjourney.awsstudygroup.com/ |
-| 3 | - Tìm hiểu tổng quan về AWS <br> - Nghiên cứu các nhóm dịch vụ chính: <br>&emsp;+ Compute <br>&emsp;+ Storage <br>&emsp;+ Networking <br>&emsp;+ Database <br>&emsp;+ Security & Identity | 18/04/2026 | 18/04/2026 | https://cloudjourney.awsstudygroup.com/ |
-| 4 | - Tạo AWS Free Tier Account <br> - Tìm hiểu giao diện AWS Management Console <br> - Cài đặt AWS CLI trên máy tính <br> - Cấu hình Access Key và Secret Key | 19/04/2026 | 19/04/2026 | https://cloudjourney.awsstudygroup.com/ |
-| 5 | - Tìm hiểu Amazon EC2 <br>&emsp;+ Instance Types <br>&emsp;+ Amazon Machine Image (AMI) <br>&emsp;+ Hoàn thành 5 nhiệm vụ lấy thành công 200 đô <br>&emsp;+ Security Group <br> - Tìm hiểu Elastic IP và phương thức SSH vào EC2 | 20/04/2026 | 20/04/2026 | https://cloudjourney.awsstudygroup.com/ |
-| 6 | - Thực hành tạo EC2 Instance <br> - Cấu hình Security Group <br> - Kết nối SSH đến EC2 <br> - Thực hành gắn EBS Volume và kiểm tra lưu trữ dữ liệu | 21/04/2026 | 21/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 4 | - Tham gia buổi giới thiệu chương trình FCAJ <br> - Làm quen với các thành viên trong nhóm <br> - Tìm hiểu nội quy, quy định và lộ trình học tập | 17/04/2026 | 17/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 5 | - Tìm hiểu tổng quan về AWS <br> - Nghiên cứu các nhóm dịch vụ chính: <br>&emsp;+ Compute <br>&emsp;+ Storage <br>&emsp;+ Networking <br>&emsp;+ Database <br>&emsp;+ Security & Identity | 18/04/2026 | 18/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 6 | - Tạo AWS Free Tier Account <br> - Tìm hiểu giao diện AWS Management Console <br> - Cài đặt AWS CLI trên máy tính <br> - Cấu hình Access Key và Secret Key | 19/04/2026 | 19/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 7 | - Tìm hiểu Amazon EC2 <br>&emsp;+ Instance Types <br>&emsp;+ Amazon Machine Image (AMI) <br>&emsp;+ Hoàn thành 5 nhiệm vụ lấy thành công 200 đô <br>&emsp;+ Security Group <br> - Tìm hiểu Elastic IP và phương thức SSH vào EC2 | 20/04/2026 | 20/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| CN | - Thực hành tạo EC2 Instance <br> - Cấu hình Security Group <br> - Kết nối SSH đến EC2 <br> - Thực hành gắn EBS Volume và kiểm tra lưu trữ dữ liệu | 21/04/2026 | 21/04/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ### Kết quả đạt được tuần 1:
 

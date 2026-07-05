@@ -1,5 +1,5 @@
 ---
-title : "Truy cập S3 từ VPC"
+title : "Truy cập S4 từ VPC"
 date : 2024-01-01 
 weight : 3
 chapter : false

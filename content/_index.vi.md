@@ -7,6 +7,7 @@ chapter: false
 
 # Báo cáo thực tập
 ### Thông tin sinh viên:
+
 &emsp; **Họ và tên:** Phạm Văn Huy
 
 &emsp; **Số điện thoại:** 0783754204
@@ -26,8 +27,6 @@ chapter: false
 &emsp; **Thời gian thực tập:** Từ ngày 12/08/2025 đến ngày 12/11/2025
 
 ![Ảnh đại diện của bạn](/images/avatar1.png)
-
-
 
 ### Nội dung báo cáo
 

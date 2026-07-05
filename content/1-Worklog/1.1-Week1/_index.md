@@ -16,11 +16,11 @@ pre: " <b> 1.1. </b> "
 
 | Day | Task | Start Date | Completion Date | Reference Material |
 |------|------------|------------|------------|------------|
-| 2 | - Attend the FCAJ orientation session <br> - Get acquainted with team members <br> - Learn about the program regulations and learning roadmap | 17/04/2026 | 17/04/2026 | https://cloudjourney.awsstudygroup.com/ |
-| 3 | - Learn the fundamentals of AWS <br> - Study the main AWS service categories: <br>&emsp;+ Compute <br>&emsp;+ Storage <br>&emsp;+ Networking <br>&emsp;+ Database <br>&emsp;+ Security & Identity | 18/04/2026 | 18/04/2026 | https://cloudjourney.awsstudygroup.com/ |
-| 4 | - Create an AWS Free Tier Account <br> - Explore AWS Management Console <br> - Install AWS CLI on a local machine <br> - Configure Access Key and Secret Access Key | 19/04/2026 | 19/04/2026 | https://cloudjourney.awsstudygroup.com/ |
-| 5 | - Learn Amazon EC2 fundamentals <br>&emsp;+ Instance Types <br>&emsp;+ Amazon Machine Image (AMI) <br>&emsp;+ Successfully completed five onboarding tasks and received AWS promotional credits <br>&emsp;+ Security Groups <br> - Learn about Elastic IP and SSH connection methods for EC2 | 20/04/2026 | 20/04/2026 | https://cloudjourney.awsstudygroup.com/ |
-| 6 | - Practice launching an EC2 Instance <br> - Configure Security Groups <br> - Connect to EC2 via SSH <br> - Attach an EBS Volume and verify data storage functionality | 21/04/2026 | 21/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 4 | - Attend the FCAJ orientation session <br> - Get acquainted with team members <br> - Learn about the program regulations and learning roadmap | 17/04/2026 | 17/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 5 | - Learn the fundamentals of AWS <br> - Study the main AWS service categories: <br>&emsp;+ Compute <br>&emsp;+ Storage <br>&emsp;+ Networking <br>&emsp;+ Database <br>&emsp;+ Security & Identity | 18/04/2026 | 18/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 6 | - Create an AWS Free Tier Account <br> - Explore AWS Management Console <br> - Install AWS CLI on a local machine <br> - Configure Access Key and Secret Access Key | 19/04/2026 | 19/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 7 | - Learn Amazon EC2 fundamentals <br>&emsp;+ Instance Types <br>&emsp;+ Amazon Machine Image (AMI) <br>&emsp;+ Successfully completed five onboarding tasks and received AWS promotional credits <br>&emsp;+ Security Groups <br> - Learn about Elastic IP and SSH connection methods for EC2 | 20/04/2026 | 20/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| CN | - Practice launching an EC2 Instance <br> - Configure Security Groups <br> - Connect to EC2 via SSH <br> - Attach an EBS Volume and verify data storage functionality | 21/04/2026 | 21/04/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ### Week 1 Achievements:
 
