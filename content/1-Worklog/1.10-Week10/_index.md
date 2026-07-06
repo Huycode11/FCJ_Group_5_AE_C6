@@ -5,53 +5,45 @@ weight: 2
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
-
 ### Week 10 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Complete the administration features of the system.
+* Develop the Administrator Dashboard.
+* Implement Service, Doctor, and Appointment Management modules.
+* Complete the integration between React, Spring Boot, and Amazon DynamoDB.
+* Design and finalize the AWS architecture diagram for the project.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
+| 2 | - Develop the Admin Dashboard interface <br> - Design the Sidebar, Header, and Layout <br> - Display overall system statistics | 22/06/2026 | 22/06/2026 | <https://react.dev/> |
+| 3 | - Develop the Service Management module <br> - Implement CRUD operations for services <br> - Test the APIs and user interface | 23/06/2026 | 23/06/2026 | <https://spring.io/> |
+| 4 | - Develop the Doctor Management module <br> - Implement CRUD operations for doctors <br> - Update doctor profiles and status | 24/06/2026 | 24/06/2026 | <https://spring.io/> |
+| 5 | - Develop the Appointment Management module <br> - Assign doctors to appointments <br> - Update appointment status <br> - Test the functionality | 25/06/2026 | 25/06/2026 | <https://docs.aws.amazon.com/> |
+| 6 | - Integrate the Dashboard with the Backend <br> - Display data from Amazon DynamoDB <br> - Optimize APIs and fix issues | 26/06/2026 | 26/06/2026 | <https://docs.aws.amazon.com/> |
+| 7 | - Design the AWS architecture using diagrams.net <br> - Finalize the AWS.drawio file <br> - Add all AWS services used in the project | 27/06/2026 | 27/06/2026 | <https://app.diagrams.net/> |
+| Sun | - Perform system integration testing <br> - Fix UI and Backend issues <br> - Review the workflow between the Frontend, Backend, and Amazon DynamoDB | 28/06/2026 | 28/06/2026 | <https://docs.aws.amazon.com/> |
 
 ### Week 10 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Successfully completed the Administrator Dashboard.
 
-* Successfully created and configured an AWS Free Tier account.
+* Implemented the following management modules:
+  * Service Management.
+  * Doctor Management.
+  * Appointment Management.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Completed the REST APIs for the administration system.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Successfully integrated React, Spring Boot, and Amazon DynamoDB.
 
-* Used AWS CLI to perform basic operations such as:
+* Displayed statistical data on the Administrator Dashboard.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Designed and finalized the AWS architecture diagram using diagrams.net (AWS.drawio).
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Successfully tested and fixed issues throughout the system.
+
+* Improved the user interface and optimized overall system performance.
+
+* Enhanced practical skills in Full Stack development and AWS cloud architecture.

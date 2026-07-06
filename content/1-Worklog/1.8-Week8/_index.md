@@ -5,53 +5,40 @@ weight: 1
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 8 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Kick off the Dental Clinic Management System project.
+* Analyze system requirements and design the AWS architecture.
+* Set up the development environment for both the Backend and Frontend.
+* Integrate the project with AWS services.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | ----------------------------------------- |
+| Sun-2 | - Analyze system requirements <br> - Identify user and administrator functionalities <br> - Design the AWS architecture diagram for the project | 07/06/2026 | 08/06/2026 | <https://docs.aws.amazon.com/> |
+| 3 | - Initialize the Spring Boot Backend project <br> - Configure Maven and required dependencies <br> - Set up the project structure using a layered architecture | 09/06/2026 | 09/06/2026 | <https://spring.io/> |
+| 4 | - Initialize the React Frontend project <br> - Configure React Router and Axios <br> - Build the initial user interface | 10/06/2026 | 10/06/2026 | <https://react.dev/> |
+| 5 | - Evaluate Amazon RDS and Amazon DynamoDB, then decide to use DynamoDB <br> - Configure the AWS SDK and connection settings <br> - Verify the database connection | 11/06/2026 | 11/06/2026 | <https://docs.aws.amazon.com/> |
+| 6-7 | - Design the initial Entities and REST APIs <br> - Implement Login and Registration features <br> - Test APIs using Postman | 12/06/2026 | 14/06/2026 | <https://docs.aws.amazon.com/> |
 
 ### Week 8 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Completed the system requirement analysis and identified the core features of the application.
 
-* Successfully created and configured an AWS Free Tier account.
+* Designed the overall AWS architecture for the Dental Clinic Management System.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Successfully initialized the Spring Boot Backend project.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Successfully initialized the React Frontend project.
 
-* Used AWS CLI to perform basic operations such as:
+* Successfully integrated the project with Amazon DynamoDB.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Completed the implementation of the initial Entity models and REST APIs.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Successfully implemented the Login and Registration features.
+
+* Successfully tested the REST APIs using Postman.
+
+* Completed the development environment setup for the next phase of the project.

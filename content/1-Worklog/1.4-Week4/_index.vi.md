@@ -5,55 +5,50 @@ weight: 1
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-
 ### Mục tiêu tuần 4:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tìm hiểu dịch vụ AWS Identity and Access Management (IAM).
+* Hiểu kiến thức cơ bản về Amazon Virtual Private Cloud (VPC).
+* Tìm hiểu dịch vụ lưu trữ Amazon S3 và các trường hợp sử dụng.
+* Thực hành quản lý người dùng, phân quyền và lưu trữ dữ liệu trên AWS.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
+| 2 | - Tìm hiểu AWS Identity and Access Management (IAM) <br> - Phân biệt Root User và IAM User <br> - Tìm hiểu User, Group, Policy và Role | 11/05/2026 | 11/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Thực hành tạo IAM User <br> - Gán Policy và phân quyền người dùng <br> - Cấu hình MFA cho tài khoản AWS | 12/05/2026 | 12/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4-5 | - Tìm hiểu Amazon VPC <br> - Khái niệm CIDR, Subnet, Route Table <br> - Internet Gateway và Security Group | 13/05/2026 | 14/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - Tìm hiểu Amazon S3 <br> - Bucket, Object và Storage Class <br> - Quản lý quyền truy cập dữ liệu trên S3 | 15/05/2026 | 15/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 7-CN | - Thực hành tạo S3 Bucket <br> - Upload, Download và quản lý dữ liệu <br> - Ôn tập IAM, VPC và S3 | 16/05/2026 | 17/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 ### Kết quả đạt được tuần 4:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Hiểu được vai trò của AWS Identity and Access Management (IAM) trong việc quản lý người dùng và phân quyền truy cập.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Thực hành thành công:
+  * Tạo IAM User.
+  * Tạo User Group.
+  * Gán IAM Policy.
+  * Thiết lập Multi-Factor Authentication (MFA).
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Hiểu được kiến trúc mạng cơ bản trên AWS bao gồm:
+  * Amazon VPC.
+  * Subnet.
+  * Route Table.
+  * Internet Gateway.
+  * Security Group.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Nắm được nguyên lý hoạt động của Amazon S3 và các thành phần:
+  * Bucket.
+  * Object.
+  * Storage Classes.
+  * Bucket Policy.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Tạo và quản lý thành công Amazon S3 Bucket.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+* Thực hành tải lên, tải xuống và quản lý dữ liệu trên Amazon S3.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Hiểu được mối quan hệ giữa IAM, VPC và S3 trong việc xây dựng một hệ thống AWS an toàn và hiệu quả.
 
-
+* Nâng cao kỹ năng quản lý tài nguyên AWS thông qua AWS Management Console và các bài thực hành trên Cloud Journey.

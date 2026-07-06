@@ -5,55 +5,40 @@ weight: 1
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-
 ### Mục tiêu tuần 7:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tìm hiểu về Elastic Load Balancing (ELB).
+* Hiểu cơ chế hoạt động của Auto Scaling Group (ASG).
+* Tìm hiểu các phương pháp giám sát và tối ưu tài nguyên trên AWS.
+* Thực hành xây dựng hệ thống có khả năng mở rộng và tính sẵn sàng cao.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
+| 2 | - Tìm hiểu Elastic Load Balancer (ELB) <br> - Phân biệt Application Load Balancer và Network Load Balancer <br> - Tìm hiểu Target Group | 01/06/2026 | 01/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Tìm hiểu Auto Scaling Group <br> - Launch Template <br> - Scaling Policies | 02/06/2026 | 02/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Thực hành tạo Load Balancer <br> - Kết nối EC2 với Target Group <br> - Kiểm tra Health Check | 03/06/2026 | 03/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Thực hành tạo Auto Scaling Group <br> - Thiết lập Scaling Policy <br> - Kiểm tra khả năng tự động mở rộng | 04/06/2026 | 04/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 6-7 | - Tìm hiểu CloudWatch Alarm <br> - Theo dõi CPU Utilization <br> - Ôn tập ELB, ASG và CloudWatch | 05/06/2026 | 06/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 ### Kết quả đạt được tuần 7:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Hiểu được vai trò của Elastic Load Balancer trong việc phân phối lưu lượng truy cập.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Phân biệt được:
+  * Application Load Balancer (ALB).
+  * Network Load Balancer (NLB).
+  * Target Group.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Hiểu được cơ chế hoạt động của Auto Scaling Group.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Thực hành cấu hình Auto Scaling để tự động tăng hoặc giảm số lượng EC2 Instance.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Hiểu được cách sử dụng CloudWatch Alarm để giám sát tài nguyên AWS.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+* Theo dõi và phân tích các chỉ số như CPU Utilization và Network Traffic.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Nắm được cách kết hợp ELB, Auto Scaling Group và CloudWatch để xây dựng hệ thống có khả năng mở rộng, tính sẵn sàng cao và hoạt động ổn định.
 
-
+* Nâng cao kỹ năng thiết kế kiến trúc AWS theo mô hình High Availability và Scalability.

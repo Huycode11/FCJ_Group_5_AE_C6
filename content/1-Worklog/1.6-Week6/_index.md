@@ -5,53 +5,44 @@ weight: 1
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
-
 ### Week 6 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Learn how to deploy applications on AWS.
+* Understand the process of deploying a website/backend on Amazon EC2.
+* Practice configuring the server environment on EC2.
+* Learn Docker basics and how to run applications using Docker on AWS.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | ----------------------------------------- |
+| Sun | - Review Week 5 knowledge <br> - Prepare the application deployment environment | 24/05/2026 | 24/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 2 | - Learn the process of deploying applications on EC2 <br> - Configure Security Groups for a web server <br> - Learn about ports 22, 80, and 443 | 25/05/2026 | 25/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Practice connecting to EC2 using SSH <br> - Install Node.js, Java, or the required runtime environment on EC2 <br> - Test the application on the server | 26/05/2026 | 26/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4-5 | - Learn Docker basics <br> - Install Docker on EC2 <br> - Understand Dockerfile and Docker Image | 27/05/2026 | 28/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - Practice building a Docker Image <br> - Run a container on EC2 <br> - Test the application using the Public IP address | 29/05/2026 | 29/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 7-Sun | - Review EC2, Docker, and the deployment process <br> - Troubleshoot application runtime issues <br> - Summarize the weekly report | 30/05/2026 | 31/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 ### Week 6 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Understood the process of deploying applications on Amazon EC2.
 
-* Successfully created and configured an AWS Free Tier account.
+* Learned how to configure Security Groups to open required ports:
+  * SSH - Port 22.
+  * HTTP - Port 80.
+  * HTTPS - Port 443.
+  * Application Port.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Practiced installing the application runtime environment on EC2.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Understood basic Docker concepts:
+  * Dockerfile.
+  * Docker Image.
+  * Docker Container.
+  * Docker Hub.
 
-* Used AWS CLI to perform basic operations such as:
+* Built a Docker Image and ran a container on EC2.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Tested the application through the EC2 Public IP address.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Improved practical skills in deploying real applications on AWS.

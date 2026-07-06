@@ -5,54 +5,44 @@ weight: 1
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-
 ### Mục tiêu tuần 6:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tìm hiểu cách triển khai ứng dụng lên AWS.
+* Hiểu quy trình deploy website/backend lên Amazon EC2.
+* Thực hành cấu hình môi trường server trên EC2.
+* Tìm hiểu Docker cơ bản và cách chạy ứng dụng bằng Docker trên AWS.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
+| CN | - Ôn tập kiến thức tuần 5 <br> - Chuẩn bị môi trường triển khai ứng dụng | 24/05/2026 | 24/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 2 | - Tìm hiểu quy trình deploy ứng dụng lên EC2 <br> - Cấu hình Security Group cho web server <br> - Tìm hiểu port 22, 80, 443 | 25/05/2026 | 25/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Thực hành kết nối EC2 bằng SSH <br> - Cài đặt Node.js, Java hoặc môi trường cần thiết trên EC2 <br> - Kiểm tra ứng dụng chạy trên server | 26/05/2026 | 26/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Tìm hiểu Docker cơ bản <br> - Cài đặt Docker trên EC2 <br> - Tìm hiểu Dockerfile và Docker Image | 27/05/2026 | 28/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - Thực hành build Docker Image <br> - Chạy container trên EC2 <br> - Kiểm tra ứng dụng qua Public IP | 29/05/2026 | 29/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 7-CN | - Ôn tập EC2, Docker và quy trình deploy <br> - Kiểm tra lỗi khi chạy ứng dụng <br> - Tổng hợp nội dung báo cáo tuần | 30/05/2026 | 31/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 ### Kết quả đạt được tuần 6:
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Hiểu được quy trình triển khai ứng dụng lên Amazon EC2.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Biết cách cấu hình Security Group để mở các cổng cần thiết:
+  * SSH - Port 22.
+  * HTTP - Port 80.
+  * HTTPS - Port 443.
+  * Application Port.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Thực hành cài đặt môi trường chạy ứng dụng trên EC2.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Hiểu được khái niệm cơ bản về Docker:
+  * Dockerfile.
+  * Docker Image.
+  * Docker Container.
+  * Docker Hub.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+* Thực hành build Docker Image và chạy container trên EC2.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Kiểm tra ứng dụng hoạt động thông qua Public IP của EC2.
 
-
+* Nâng cao kỹ năng triển khai ứng dụng thực tế trên môi trường AWS.

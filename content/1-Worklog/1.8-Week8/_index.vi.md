@@ -5,55 +5,39 @@ weight: 1
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-
 ### Mục tiêu tuần 8:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Khởi động dự án Website Quản lý Phòng khám Nha khoa.
+* Phân tích yêu cầu và thiết kế kiến trúc hệ thống trên AWS.
+* Xây dựng môi trường phát triển cho Backend và Frontend.
+* Kết nối dự án với các dịch vụ AWS.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
+| CN-2 | - Phân tích yêu cầu hệ thống <br> - Xác định các chức năng của người dùng và quản trị viên <br> - Thiết kế sơ đồ kiến trúc AWS cho dự án | 07/06/2026 | 08/06/2026 | <https://docs.aws.amazon.com/> |
+| 3 | - Khởi tạo Backend bằng Spring Boot <br> - Cấu hình Maven và các thư viện cần thiết <br> - Tạo cấu trúc dự án theo mô hình nhiều tầng | 09/06/2026 | 09/06/2026 | <https://spring.io/> |
+| 4 | - Khởi tạo Frontend bằng React <br> - Cấu hình React Router và Axios <br> - Xây dựng giao diện ban đầu | 10/06/2026 | 10/06/2026 | <https://react.dev/> |
+| 5 | - Kết nối Backend với Amazon RDS hoặc DynamoDB nhưng quyết định làm DynamoDB <br> - Cấu hình AWS SDK và thông tin kết nối <br> - Kiểm tra kết nối cơ sở dữ liệu | 11/06/2026 | 11/06/2026 | <https://docs.aws.amazon.com/> |
+| 6-7 | - Thiết kế các Entity và API đầu tiên <br> - Xây dựng chức năng Đăng nhập và Đăng ký <br> - Kiểm thử API bằng Postman | 12/06/2026 | 14/06/2026 | <https://docs.aws.amazon.com/> |
 
 ### Kết quả đạt được tuần 8:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Hoàn thành phân tích yêu cầu và xác định các chức năng chính của hệ thống.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Thiết kế kiến trúc tổng quan cho Website Quản lý Phòng khám Nha khoa trên AWS.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Khởi tạo thành công dự án Backend bằng Spring Boot.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Khởi tạo thành công dự án Frontend bằng React.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Kết nối thành công cơ sở dữ liệu AWS Amazon DynamoDB.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+* Hoàn thành xây dựng các Entity và API cơ bản.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Xây dựng thành công chức năng Đăng ký và Đăng nhập.
 
+* Kiểm thử thành công các API bằng Postman.
 
+* Hoàn thiện môi trường phát triển để tiếp tục triển khai các chức năng của dự án.

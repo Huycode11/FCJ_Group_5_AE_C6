@@ -5,55 +5,41 @@ weight: 1
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-
 ### Mục tiêu tuần 9:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Phát triển các chức năng cốt lõi của hệ thống.
+* Hoàn thiện mô hình dữ liệu trên Amazon DynamoDB.
+* Xây dựng API quản lý người dùng và bác sĩ.
+* Kết nối Backend và Frontend.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
+| 2 | - Thiết kế các bảng trên Amazon DynamoDB <br> - Xây dựng Entity và Repository cho hệ thống <br> - Hoàn thiện cấu trúc dữ liệu | 15/06/2026 | 15/06/2026 | <https://docs.aws.amazon.com/> |
+| 3 | - Xây dựng API quản lý người dùng <br> - Hoàn thiện chức năng xác thực bằng JWT <br> - Kiểm thử API bằng Postman | 16/06/2026 | 16/06/2026 | <https://spring.io/> |
+| 4 | - Xây dựng API quản lý bác sĩ <br> - CRUD thông tin bác sĩ <br> - Kiểm thử chức năng | 17/06/2026 | 17/06/2026 | <https://spring.io/> |
+| 5 | - Kết nối React với Backend <br> - Hiển thị dữ liệu người dùng và bác sĩ <br> - Kiểm tra luồng dữ liệu | 18/06/2026 | 18/06/2026 | <https://react.dev/> |
+| 6-CN | - Hoàn thiện giao diện Đăng nhập và Đăng ký <br> - Kiểm thử tích hợp giữa Frontend và Backend <br> - Khắc phục các lỗi phát sinh | 19/06/2026 | 21/06/2026 | <https://docs.aws.amazon.com/> |
 
 ### Kết quả đạt được tuần 9:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Hoàn thiện mô hình dữ liệu trên Amazon DynamoDB.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Xây dựng thành công:
+  * Entity.
+  * Repository.
+  * Service.
+  * REST API.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Hoàn thiện chức năng xác thực người dùng bằng JWT.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Xây dựng API quản lý người dùng và bác sĩ.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Kết nối thành công giữa Backend Spring Boot và Frontend React.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+* Hiển thị dữ liệu từ Amazon DynamoDB trên giao diện người dùng.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Kiểm thử thành công các API bằng Postman và kiểm tra luồng dữ liệu giữa Frontend và Backend.
 
-
+* Nâng cao kỹ năng phát triển ứng dụng Full Stack trên nền tảng AWS.
