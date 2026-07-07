@@ -5,111 +5,286 @@ weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-In this section, you need to summarize the contents of the workshop that you **plan** to conduct.
-
-# IoT Weather Platform for Lab Research
-## A Unified AWS Serverless Solution for Real-Time Weather Monitoring
+# Dental Clinic System
+## Dental Clinic Appointment and Management Website on AWS Cloud
 
 ### 1. Executive Summary
-The IoT Weather Platform is designed for the ITea Lab team in Ho Chi Minh City to enhance weather data collection and analysis. It supports up to 5 weather stations, with potential scalability to 10-15, utilizing Raspberry Pi edge devices with ESP32 sensors to transmit data via MQTT. The platform leverages AWS Serverless services to deliver real-time monitoring, predictive analytics, and cost efficiency, with access restricted to 5 lab members via Amazon Cognito.
 
-### 2. Problem Statement
-### What’s the Problem?
-Current weather stations require manual data collection, becoming unmanageable with multiple units. There is no centralized system for real-time data or analytics, and third-party platforms are costly and overly complex.
+The **Dental Clinic System** is a web-based application that enables patients to book dental appointments online, browse available services, track appointment status, and receive notifications from the clinic. The system also assists dentists and administrators in managing appointments, dental services, patient records, and daily clinic operations.
 
-### The Solution
-The platform uses AWS IoT Core to ingest MQTT data, AWS Lambda and API Gateway for processing, Amazon S3 for storage (including a data lake), and AWS Glue Crawlers and ETL jobs to extract, transform, and load data from the S3 data lake to another S3 bucket for analysis. AWS Amplify with Next.js provides the web interface, and Amazon Cognito ensures secure access. Similar to Thingsboard and CoreIoT, users can register new devices and manage connections, though this platform operates on a smaller scale and is designed for private use. Key features include real-time dashboards, trend analysis, and low operational costs.
+The system is built on a **Cloud Native Architecture** using AWS services to provide high availability, security, scalability, and performance. The frontend is deployed using **AWS Amplify**, while the backend is developed with **Spring Boot** and hosted on **Amazon EC2**. Application data is stored in **Amazon DynamoDB**, medical images and uploaded files are stored in **Amazon S3**, and services such as **CloudWatch, SNS, SES, AWS WAF, IAM, Secrets Manager, and AWS KMS** are integrated to ensure reliable and secure operation.
 
-### Benefits and Return on Investment
-The solution establishes a foundational resource for lab members to develop a larger IoT platform, serving as a study resource, and provides a data foundation for AI enthusiasts for model training or analysis. It reduces manual reporting for each station via a centralized platform, simplifying management and maintenance, and improves data reliability. Monthly costs are $0.66 USD per the AWS Pricing Calculator, with a 12-month total of $7.92 USD. All IoT equipment costs are covered by the existing weather station setup, eliminating additional development expenses. The break-even period of 6-12 months is achieved through significant time savings from reduced manual work.
+---
 
-### 3. Solution Architecture
-The platform employs a serverless AWS architecture to manage data from 5 Raspberry Pi-based stations, scalable to 15. Data is ingested via AWS IoT Core, stored in an S3 data lake, and processed by AWS Glue Crawlers and ETL jobs to transform and load it into another S3 bucket for analysis. Lambda and API Gateway handle additional processing, while Amplify with Next.js hosts the dashboard, secured by Cognito. The architecture is detailed below:
+## 2. Problem Statement
 
-![IoT Weather Station Architecture](/images/2-Proposal/edge_architecture.jpeg)
+### Current Problems
 
-![IoT Weather Platform Architecture](/images/2-Proposal/platform_architecture.jpeg)
+Many dental clinics still manage appointments manually through phone calls or paper-based records, which leads to several issues:
+
+- Difficult appointment management.
+- Appointment conflicts and scheduling errors.
+- Inefficient patient information management.
+- No automatic notification system.
+- Limited scalability as the number of patients increases.
+
+### Proposed Solution
+
+The **Dental Clinic System** provides a cloud-based appointment management platform running on AWS Cloud.
+
+Patients can:
+
+- Register and log in.
+- Book dental appointments.
+- View appointment history.
+- Cancel appointments.
+- Browse available dental services.
+- Track appointment status.
+
+Dentists can:
+
+- View their schedules.
+- Manage patient appointments.
+- Update treatment status.
+
+Administrators can:
+
+- Manage users.
+- Manage dentists.
+- Manage dental services.
+- Manage appointments.
+- Monitor overall system activities.
+
+### Benefits
+
+- Reduce appointment processing time.
+- Automate appointment scheduling.
+- Improve patient experience.
+- Provide a scalable cloud infrastructure.
+- Enhance data security.
+- Reduce operational costs by utilizing AWS Cloud services.
+
+---
+
+## 3. Solution Architecture
+
+The system follows a **Cloud Native Architecture** on AWS.
+
+The frontend is deployed using **AWS Amplify**, together with **Amazon Route 53**, **Amazon CloudFront**, and **AWS WAF** to improve performance and protect the application.
+
+The backend is deployed on **Amazon EC2** behind an **Application Load Balancer (ALB)** to handle incoming requests efficiently.
+
+Application data is stored in **Amazon DynamoDB**, while images and uploaded files are stored in **Amazon S3**.
+
+Sensitive configuration data is securely managed using **AWS Secrets Manager** and encrypted with **AWS KMS**.
+
+**Amazon CloudWatch** monitors system resources, while **Amazon SNS** and **Amazon SES** deliver alerts and appointment confirmation emails.
+
+![Dental Clinic Architecture](/images/2-Proposal/drawio.png)
 
 ### AWS Services Used
-- **AWS IoT Core**: Ingests MQTT data from 5 stations, scalable to 15.
-- **AWS Lambda**: Processes data and triggers Glue jobs (two functions).
-- **Amazon API Gateway**: Facilitates web app communication.
-- **Amazon S3**: Stores raw data in a data lake and processed outputs (two buckets).
-- **AWS Glue**: Crawlers catalog data, and ETL jobs transform and load it.
-- **AWS Amplify**: Hosts the Next.js web interface.
-- **Amazon Cognito**: Secures access for lab users.
+
+- **Amazon Route 53:** Manages domain names and routes users to the application using DNS.
+- **Amazon CloudFront:** Delivers content globally with low latency through a Content Delivery Network (CDN).
+- **AWS WAF:** Protects the application against common web attacks such as SQL Injection and Cross-Site Scripting (XSS).
+- **AWS Amplify:** Hosts and deploys the React frontend with automatic build and deployment from GitHub.
+- **Application Load Balancer (ALB):** Distributes incoming traffic across backend services to improve availability.
+- **Amazon EC2:** Hosts the Spring Boot backend application and processes business logic.
+- **Amazon DynamoDB:** Stores users, dentists, services, appointments, and other application data.
+- **Amazon S3:** Stores doctor images, service images, user uploads, and static files.
+- **AWS Secrets Manager:** Securely stores sensitive credentials such as JWT secrets and API keys.
+- **AWS Key Management Service (KMS):** Encrypts sensitive data and manages encryption keys.
+- **Amazon CloudWatch:** Collects logs and monitors application performance.
+- **Amazon SNS:** Sends system notifications and operational alerts.
+- **Amazon SES:** Sends appointment confirmations, reminders, and email notifications.
+- **AWS Identity and Access Management (IAM):** Controls user permissions and access to AWS resources.
 
 ### Component Design
-- **Edge Devices**: Raspberry Pi collects and filters sensor data, sending it to IoT Core.
-- **Data Ingestion**: AWS IoT Core receives MQTT messages from the edge devices.
-- **Data Storage**: Raw data is stored in an S3 data lake; processed data is stored in another S3 bucket.
-- **Data Processing**: AWS Glue Crawlers catalog the data, and ETL jobs transform it for analysis.
-- **Web Interface**: AWS Amplify hosts a Next.js app for real-time dashboards and analytics.
-- **User Management**: Amazon Cognito manages user access, allowing up to 5 active accounts.
 
-### 4. Technical Implementation
-**Implementation Phases**
-This project has two parts—setting up weather edge stations and building the weather platform—each following 4 phases:
-- Build Theory and Draw Architecture: Research Raspberry Pi setup with ESP32 sensors and design the AWS serverless architecture (1 month pre-internship)
-- Calculate Price and Check Practicality: Use AWS Pricing Calculator to estimate costs and adjust if needed (Month 1).
-- Fix Architecture for Cost or Solution Fit: Tweak the design (e.g., optimize Lambda with Next.js) to stay cost-effective and usable (Month 2).
-- Develop, Test, and Deploy: Code the Raspberry Pi setup, AWS services with CDK/SDK, and Next.js app, then test and release to production (Months 2-3).
+**Frontend**
 
-**Technical Requirements**
-- Weather Edge Station: Sensors (temperature, humidity, rainfall, wind speed), a microcontroller (ESP32), and a Raspberry Pi as the edge device. Raspberry Pi runs Raspbian, handles Docker for filtering, and sends 1 MB/day per station via MQTT over Wi-Fi.
-- Weather Platform: Practical knowledge of AWS Amplify (hosting Next.js), Lambda (minimal use due to Next.js), AWS Glue (ETL), S3 (two buckets), IoT Core (gateway and rules), and Cognito (5 users). Use AWS CDK/SDK to code interactions (e.g., IoT Core rules to S3). Next.js reduces Lambda workload for the fullstack web app.
+- ReactJS
+- AWS Amplify
+- Amazon CloudFront
+- Amazon Route 53
+- AWS WAF
 
-### 5. Timeline & Milestones
-**Project Timeline**
-- Pre-Internship (Month 0): 1 month for planning and old station review.
-- Internship (Months 1-3): 3 months.
-    - Month 1: Study AWS and upgrade hardware.
-    - Month 2: Design and adjust architecture.
-    - Month 3: Implement, test, and launch.
-- Post-Launch: Up to 1 year for research.
+**Backend**
 
-### 6. Budget Estimation
-You can find the budget estimation on the [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=621f38b12a1ef026842ba2ddfe46ff936ed4ab01).  
-Or you can download the [Budget Estimation File](../attachments/budget_estimation.pdf).
+- Spring Boot
+- Amazon EC2
+- Application Load Balancer
 
-### Infrastructure Costs
-- AWS Services:
-    - AWS Lambda: $0.00/month (1,000 requests, 512 MB storage).
-    - S3 Standard: $0.15/month (6 GB, 2,100 requests, 1 GB scanned).
-    - Data Transfer: $0.02/month (1 GB inbound, 1 GB outbound).
-    - AWS Amplify: $0.35/month (256 MB, 500 ms requests).
-    - Amazon API Gateway: $0.01/month (2,000 requests).
-    - AWS Glue ETL Jobs: $0.02/month (2 DPUs).
-    - AWS Glue Crawlers: $0.07/month (1 crawler).
-    - MQTT (IoT Core): $0.08/month (5 devices, 45,000 messages).
+**Database**
 
-Total: $0.7/month, $8.40/12 months
+- Amazon DynamoDB
 
-- Hardware: $265 one-time (Raspberry Pi 5 and sensors).
+**Storage**
 
-### 7. Risk Assessment
-#### Risk Matrix
-- Network Outages: Medium impact, medium probability.
-- Sensor Failures: High impact, low probability.
-- Cost Overruns: Medium impact, low probability.
+- Amazon S3
 
-#### Mitigation Strategies
-- Network: Local storage on Raspberry Pi with Docker.
-- Sensors: Regular checks and spares.
-- Cost: AWS budget alerts and optimization.
+**Security**
 
-#### Contingency Plans
-- Revert to manual methods if AWS fails.
-- Use CloudFormation for cost-related rollbacks.
+- AWS IAM
+- AWS Secrets Manager
+- AWS KMS
 
-### 8. Expected Outcomes
-#### Technical Improvements: 
-Real-time data and analytics replace manual processes.  
-Scalable to 10-15 stations.
-#### Long-term Value
-1-year data foundation for AI research.  
-Reusable for future projects.
+**Monitoring**
+
+- Amazon CloudWatch
+- Amazon SNS
+- Amazon SES
+
+---
+
+## 4. Technical Implementation
+
+### Implementation Phases
+
+The project is divided into four main phases, from requirement analysis to deployment on AWS Cloud.
+
+1. **Requirement Analysis and System Design:** Analyze the requirements of the dental clinic, identify core features such as user management, dentist management, appointment scheduling, and service management, then design the database, user interface, and AWS Cloud architecture.
+
+2. **System Development:** Develop the frontend using ReactJS and the backend using Java Spring Boot following the RESTful API architecture. Configure Amazon DynamoDB for data storage and Amazon S3 for image storage while implementing all business functionalities.
+
+3. **AWS Deployment:** Deploy the frontend using AWS Amplify and the backend on Amazon EC2. Configure Application Load Balancer (ALB), Amazon Route 53, Amazon CloudFront, and AWS WAF to improve performance, availability, and security.
+
+4. **Testing, Optimization, and Operation:** Perform functional testing, security testing, and performance testing. Monitor the system using Amazon CloudWatch, configure Amazon SNS and Amazon SES for notifications and email confirmations, and optimize both cost and system performance before production deployment.
+
+### Technical Requirements
+
+**Frontend**
+
+- ReactJS with Tailwind CSS.
+- Axios for REST API communication.
+- AWS Amplify deployment.
+- Amazon CloudFront for CDN.
+- Amazon Route 53 for DNS management.
+- AWS WAF for application protection.
+
+**Backend**
+
+- Java Spring Boot.
+- RESTful API architecture.
+- JWT Authentication.
+- Amazon EC2 deployment.
+- Application Load Balancer.
+- AWS Secrets Manager.
+- AWS KMS.
+
+**Database and Storage**
+
+- Amazon DynamoDB for application data.
+- Amazon S3 for storing images and uploaded files.
+
+**Monitoring and Notification**
+
+- Amazon CloudWatch for monitoring logs and resources.
+- Amazon SNS for operational notifications.
+- Amazon SES for appointment confirmation and reminder emails.
+
+**Security**
+
+- AWS IAM for access control.
+- AWS Secrets Manager for credential management.
+- AWS KMS for data encryption.
+
+**Deployment Environment**
+
+- Frontend: ReactJS + AWS Amplify.
+- Backend: Java Spring Boot on Amazon EC2.
+- Database: Amazon DynamoDB.
+- Storage: Amazon S3.
+- Domain: Amazon Route 53.
+- CDN: Amazon CloudFront.
+- Security: AWS WAF, IAM, Secrets Manager, AWS KMS.
+- Monitoring: Amazon CloudWatch.
+- Notification: Amazon SNS and Amazon SES.
+
+---
+
+## 5. Project Timeline
+
+### Month 1
+
+- Requirement analysis.
+- UI/UX design.
+- Database design.
+- AWS architecture design.
+
+### Month 2
+
+- Backend development.
+- Frontend development.
+- DynamoDB integration.
+- Amazon S3 integration.
+
+### Month 3
+
+- AWS deployment.
+- System testing.
+- Performance optimization.
+- Final documentation.
+
+---
+
+## 6. Budget Estimation
+
+Infrastructure costs are estimated using the **AWS Pricing Calculator**.
+
+### Infrastructure Cost
+
+- Amazon EC2: 0.30 USD/month
+- Application Load Balancer: 0.06 USD/month
+- Amazon DynamoDB: 0.08 USD/month
+- Amazon S3: 0.10 USD/month
+- AWS Amplify: 0.15 USD/month
+- Amazon CloudFront: 0.05 USD/month
+- Amazon Route 53: 0.04 USD/month
+- AWS WAF: 0.10 USD/month
+- Amazon CloudWatch: 0.05 USD/month
+- Amazon SNS: 0.02 USD/month
+- Amazon SES: 0.04 USD/month
+- AWS Secrets Manager: 0.03 USD/month
+- AWS KMS: 0.02 USD/month
+
+**Total:** **1.04 USD/month**, approximately **12.48 USD/year** (estimated for a small-scale demonstration environment using AWS Free Tier whenever applicable).
+
+---
+
+## 7. Risk Assessment
+
+### Risk Matrix
+
+- Amazon EC2 failure.
+- Unexpected traffic spikes.
+- Internet connectivity issues.
+- AWS configuration errors.
+- Credential leakage.
+
+### Mitigation Strategy
+
+- Monitor the system with Amazon CloudWatch.
+- Protect the application using AWS WAF.
+- Store sensitive credentials in AWS Secrets Manager.
+- Apply IAM role-based access control.
+- Perform regular data backups.
+
+### Contingency Plan
+
+- Restore uploaded files from Amazon S3.
+- Redeploy the backend on Amazon EC2.
+- Analyze logs through Amazon CloudWatch.
+- Notify administrators via Amazon SNS and Amazon SES.
+
+---
+
+## 8. Expected Outcomes
+
+- Successfully develop an online dental appointment management system.
+- Deploy a stable and secure application on AWS Cloud.
+- Improve appointment management efficiency.
+- Enhance patient experience.
+- Provide a scalable cloud architecture for future expansion.
+- Support future features such as online payment, AI chatbot, and Electronic Medical Records (EMR).

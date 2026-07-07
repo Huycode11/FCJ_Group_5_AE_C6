@@ -141,64 +141,64 @@ CloudWatch theo dõi hoạt động hệ thống, SNS và Amazon SES gửi cản
 
 #### Các giai đoạn triển khai
 
-**Giai đoạn 1**
+Dự án được chia thành 4 giai đoạn chính, từ phân tích yêu cầu đến triển khai hệ thống trên nền tảng AWS Cloud.
 
-- Phân tích yêu cầu.
-- Thiết kế cơ sở dữ liệu.
-- Thiết kế giao diện.
-- Thiết kế kiến trúc AWS.
+1. **Phân tích yêu cầu và thiết kế hệ thống:** Khảo sát nhu cầu của phòng khám nha khoa, phân tích các chức năng cần thiết như quản lý người dùng, bác sĩ, dịch vụ và lịch hẹn. Thiết kế cơ sở dữ liệu, giao diện người dùng và kiến trúc triển khai trên AWS Cloud.
 
-**Giai đoạn 2**
+2. **Xây dựng và phát triển hệ thống:** Phát triển Frontend bằng ReactJS và Backend bằng Java Spring Boot theo mô hình RESTful API. Đồng thời xây dựng cơ sở dữ liệu trên Amazon DynamoDB, lưu trữ hình ảnh trên Amazon S3 và hoàn thiện các chức năng nghiệp vụ của hệ thống.
 
-- Phát triển Frontend bằng React.
-- Phát triển Backend bằng Spring Boot.
-- Kết nối DynamoDB.
-- Kết nối Amazon S3.
+3. **Triển khai hệ thống trên AWS:** Triển khai ứng dụng Frontend bằng AWS Amplify, triển khai Backend trên Amazon EC2, cấu hình Application Load Balancer (ALB), Route 53, CloudFront và AWS WAF để đảm bảo khả năng truy cập, bảo mật và hiệu năng của hệ thống.
 
-**Giai đoạn 3**
+4. **Kiểm thử, tối ưu và vận hành:** Tiến hành kiểm thử chức năng, kiểm thử bảo mật và hiệu năng. Theo dõi hệ thống bằng Amazon CloudWatch, cấu hình Amazon SNS và Amazon SES để gửi thông báo và email xác nhận lịch hẹn, đồng thời tối ưu chi phí và hiệu năng trước khi đưa hệ thống vào sử dụng.
 
-- Triển khai hệ thống lên AWS.
-- Cấu hình Route53.
-- Triển khai Amplify.
-- Cấu hình EC2.
-- Thiết lập ALB.
-- Thiết lập WAF.
-
-**Giai đoạn 4**
-
-- Kiểm thử.
-- Tối ưu hiệu năng.
-- Hoàn thiện báo cáo.
-- Triển khai chính thức.
+---
 
 #### Yêu cầu kỹ thuật
 
-Frontend
+**Frontend**
 
-- ReactJS
-- Axios
-- Tailwind CSS
+- Phát triển bằng **ReactJS** kết hợp **Tailwind CSS** để xây dựng giao diện người dùng hiện đại và thân thiện.
+- Sử dụng **Axios** để giao tiếp với RESTful API.
+- Triển khai ứng dụng trên **AWS Amplify**.
+- Tăng tốc truy cập thông qua **Amazon CloudFront** và định tuyến tên miền bằng **Amazon Route 53**.
+- Bảo vệ ứng dụng bằng **AWS WAF** nhằm hạn chế các cuộc tấn công phổ biến như SQL Injection và Cross-Site Scripting (XSS).
 
-Backend
+**Backend**
 
-- Java Spring Boot
-- REST API
-- JWT Authentication
+- Phát triển bằng **Java Spring Boot** theo mô hình RESTful API.
+- Xác thực và phân quyền người dùng bằng **JWT Authentication**.
+- Triển khai Backend trên **Amazon EC2**.
+- Sử dụng **Application Load Balancer (ALB)** để phân phối lưu lượng truy cập và tăng tính sẵn sàng của hệ thống.
+- Quản lý thông tin bảo mật bằng **AWS Secrets Manager** và mã hóa dữ liệu với **AWS KMS**.
 
-AWS
+**Cơ sở dữ liệu và lưu trữ**
 
-- EC2
-- Amplify
-- DynamoDB
-- S3
-- Route53
-- CloudFront
-- WAF
-- CloudWatch
-- SNS
-- SES
-- Secrets Manager
-- IAM
+- **Amazon DynamoDB** được sử dụng để lưu trữ dữ liệu người dùng, bác sĩ, dịch vụ, lịch hẹn và thông tin đặt khám.
+- **Amazon S3** lưu trữ hình ảnh bác sĩ, hình ảnh dịch vụ, ảnh đại diện và các tệp do người dùng tải lên.
+
+**Giám sát và thông báo**
+
+- **Amazon CloudWatch** theo dõi log, tài nguyên và hiệu năng của hệ thống.
+- **Amazon SNS** gửi cảnh báo khi xảy ra sự cố hoặc các sự kiện quan trọng.
+- **Amazon SES** gửi email xác nhận đặt lịch, nhắc lịch khám và thông báo đến người dùng.
+
+**Bảo mật hệ thống**
+
+- **AWS IAM** quản lý người dùng, vai trò và phân quyền truy cập tài nguyên AWS.
+- **AWS Secrets Manager** lưu trữ các thông tin nhạy cảm như Access Key, JWT Secret và các thông số kết nối.
+- **AWS KMS** mã hóa dữ liệu nhằm đảm bảo an toàn thông tin trong quá trình lưu trữ và truyền tải.
+
+**Môi trường triển khai**
+
+- Frontend: ReactJS + AWS Amplify.
+- Backend: Java Spring Boot chạy trên Amazon EC2.
+- Database: Amazon DynamoDB.
+- Storage: Amazon S3.
+- Domain: Amazon Route 53.
+- CDN: Amazon CloudFront.
+- Security: AWS WAF, IAM, Secrets Manager và AWS KMS.
+- Monitoring: Amazon CloudWatch.
+- Notification: Amazon SNS và Amazon SES.
 
 ---
 
