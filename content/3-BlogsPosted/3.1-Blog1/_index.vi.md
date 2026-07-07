@@ -5,27 +5,43 @@ weight: 1
 chapter: false
 pre: " <b> 3.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
-# SESSION POLICIES TRONG AMAZON EKS POD IDENTITY
 
-Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
+# LOAD TESTING TRÊN AWS: KHÔNG CHỈ KIỂM TRA WEBSITE CHẠY ĐƯỢC, MÀ CÒN KIỂM TRA HỆ THỐNG CHỊU TẢI TỐT HAY KHÔNG
+Khi xây dựng một website hoặc ứng dụng, nhiều người thường chỉ quan tâm đến việc hệ thống có chạy được, có truy cập được, có lỗi giao diện hay không.
 
-Các điểm chính cần nắm:
+Nhưng trong môi trường thực tế, đặc biệt là khi ứng dụng có nhiều người dùng cùng lúc, câu hỏi quan trọng hơn là: Nếu có hàng trăm hoặc hàng nghìn request gửi đến cùng lúc thì hệ thống có còn ổn định không?
 
-* Session policy là một IAM policy inline được chỉ định khi tạo hoặc cập nhật Pod Identity association.
-* Quyền hiệu quả = intersection (giao) giữa permissions của IAM role và session policy → session policy chỉ có thể thu hẹp, không thể mở rộng quyền.
-* Giúp tránh tình trạng over-permissioning khi reuse chung một IAM role cho nhiều workloads có nhu cầu khác nhau.
-* Hỗ trợ cả same-account và cross-account (qua IAM role chaining).
-* Giảm đáng kể số lượng IAM roles cần quản lý, tránh chạm giới hạn quota IAM trong cluster lớn.
-* Cấu hình dễ dàng qua AWS Management Console, AWS CLI hoặc AWS SDK khi tạo association giữa Kubernetes ServiceAccount và IAM role.
+Đây chính là lý do cần thực hiện Load Testing trước khi triển khai sản phẩm thật cho người dùng.
 
-Tính năng này đặc biệt hữu ích khi bạn có nhiều ứng dụng chạy trên cùng một IAM role nhưng cần giới hạn quyền khác nhau (ví dụ: một pod chỉ đọc S3 bucket cụ thể, pod khác chỉ gọi một số API nhất định).
+Để hỗ trợ bài toán này, AWS cung cấp giải pháp Distributed Load Testing on AWS, giúp mô phỏng lượng truy cập lớn, chạy kiểm thử tải phân tán và theo dõi kết quả trực tiếp trên các dịch vụ AWS.
 
-...Hình ảnh...
+NHỮNG ĐIỂM NỔI BẬT:
+<br>&emsp;+Tạo kịch bản kiểm thử tải dễ dàng:
+<br>&emsp;Người dùng có thể tạo các test scenario để mô phỏng nhiều request gửi đến website, API hoặc ứng dụng cần kiểm thử.
+<br>&emsp;+Chạy kiểm thử bằng container:
+<br>&emsp;Giải pháp sử dụng Amazon ECS trên AWS Fargate để chạy các container tạo tải. Điều này giúp hệ thống có thể mở rộng linh hoạt khi cần kiểm thử với số lượng request lớn hơn.
+<br>&emsp;+Có giao diện web để quản lý:
+<br>&emsp;Người dùng có thể tạo, chạy và theo dõi bài test thông qua giao diện web, thay vì phải thao tác hoàn toàn bằng dòng lệnh.
+<br>&emsp;+Kết hợp nhiều dịch vụ AWS:
+<br>&emsp;Kiến trúc sử dụng các dịch vụ như Amazon S3, CloudFront, API Gateway, AWS Lambda, Step Functions, DynamoDB, ECS Fargate và CloudWatch để tạo thành một hệ thống kiểm thử hoàn chỉnh.
+<br>&emsp;+Theo dõi kết quả kiểm thử:
+<br>&emsp;Sau khi chạy test, hệ thống có thể lưu kết quả, log và metrics để người dùng phân tích hiệu năng, phát hiện điểm nghẽn và đưa ra hướng tối ưu.
 
-...Link...
+KẾT LUẬN:
+Điều mình thấy hay ở Distributed Load Testing on AWS là giải pháp này giúp chúng ta kiểm tra khả năng chịu tải của hệ thống trước khi gặp traffic thật.
+Một ứng dụng tốt không chỉ cần chạy được, mà còn cần trả lời được các câu hỏi như:
+<br>&emsp;Hệ thống chịu được bao nhiêu người dùng cùng lúc?
+<br>&emsp;API có bị chậm khi lượng request tăng không?
+<br>&emsp;Thành phần nào đang là điểm nghẽn?
+<br>&emsp;Có cần scale thêm tài nguyên hay không?
+<br>&emsp;Hệ thống có ổn định khi chạy trong thời gian dài không?
 
-...Hướng dẫn...
+Theo mình, đây là một chủ đề rất đáng học khi tìm hiểu về AWS, vì nó kết hợp nhiều mảng quan trọng như Container, Serverless, Monitoring, Performance Testing và Cloud Architecture.
+
+Thông qua bài này, mình hiểu hơn rằng trước khi đưa một hệ thống lên production, việc kiểm thử tải là rất cần thiết để đảm bảo ứng dụng hoạt động ổn định, giảm rủi ro lỗi hệ thống và mang lại trải nghiệm tốt hơn cho người dùng.
+
+Link tài liệu AWS có hình kiến trúc:
+https://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/architecture-overview.html
+
+![Ảnh](/images/Blog1.jpg)

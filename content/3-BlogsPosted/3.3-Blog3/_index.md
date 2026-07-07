@@ -5,27 +5,40 @@ weight: 1
 chapter: false
 pre: " <b> 3.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# SESSION POLICIES IN AMAZON EKS POD IDENTITY
+# AWS CODEPIPELINE: AUTOMATE YOUR APPLICATION DEPLOYMENT PROCESS
+When developing applications, manual building and deployment often takes a lot of time and is prone to errors.
 
-Amazon EKS Pod Identity has recently added the session policies feature, allowing you to narrow IAM permissions flexibly and precisely for each pod without needing to create many separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+To address this, AWS offers the AWS CodePipeline service, which automates the entire process from code updates to application deployment.
 
-Key points to know:
+AWS CodePipeline is a CI/CD service that allows you to build a pipeline to automatically build, test, and deploy applications quickly and efficiently.
 
-* A session policy is an inline IAM policy specified when creating or updating a Pod Identity association.
-* Effective permissions = intersection between the IAM role permissions and the session policy → the session policy can only narrow permissions, not expand them.
-* Helps avoid over-permissioning when reusing a single IAM role for multiple workloads with different needs.
-* Supports both same-account and cross-account (via IAM role chaining).
-* Significantly reduces the number of IAM roles that need to be managed, helping avoid hitting IAM quota limits in large clusters.
-* Easily configured through the AWS Management Console, AWS CLI, or AWS SDK when creating an association between a Kubernetes ServiceAccount and an IAM role.
+HIGHLIGHTS:
+<br>&emsp;• Software development workflow automation:
+<br>&emsp;Whenever there is a change in the source code, the pipeline will automatically trigger the build and deployment process.
+<br>&emsp;• Integration with multiple AWS services:
+<br>&emsp;CodePipeline can be integrated with CodeBuild, CodeDeploy, S3, EC2, and many other services.
+<br>&emsp;• Supports multiple code sources:
+<br>&emsp;Sources can be obtained from GitHub, AWS CodeCommit, or other systems.
+<br>&emsp;• Easy pipeline monitoring:
+<br>&emsp;Users can observe each step in the pipeline and check for errors.
+<br>&emsp;• Accelerated development:
+<br>&emsp;Reduces deployment time and minimizes errors caused by manual operations.
 
-This feature is especially useful when you have many applications running on the same IAM role but need different permission restrictions (for example: one pod only reads a specific S3 bucket, another pod only calls certain APIs).
+CONCLUSION:
+What I find useful about AWS CodePipeline is that it automates the entire application development and deployment process without requiring much manual work.
 
-...Image...
+A modern system needs not only to run stably but also to:
+<br>&emsp;• Fast and continuous deployment.
+<br>&emsp;• Minimize errors during deployment.
+<br>&emsp;• Easy process monitoring and management.
 
-...Link...
+In my opinion, this is a very important service when learning AWS because it is directly related to DevOps and CI/CD.
 
-...Guide...
+Through this article, I understand better that automation is a crucial factor in optimizing the software development process.
+
+Document link:
+
+https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html
+
+![Picture](/images/Blog3.jpg)
