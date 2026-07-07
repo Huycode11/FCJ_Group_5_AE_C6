@@ -2,7 +2,7 @@
 title: "Nhật ký công việc"
 date: 2024-01-01
 weight: 1
-chapter: false
+chapter: true
 pre: " <b> 1. </b> "
 ---
 
