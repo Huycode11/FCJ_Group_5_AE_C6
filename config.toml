@@ -1,8 +1,8 @@
 baseURL = "https://huycode11.github.io/FCJ_Group_5_AE_C6/"
-relativeURLs =  true
-canonifyURLs =  true
+relativeURLs = false
+canonifyURLs = false
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = false
+defaultContentLanguageInSubdir = true
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
 
