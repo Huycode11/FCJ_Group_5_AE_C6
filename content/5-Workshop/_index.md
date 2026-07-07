@@ -5,27 +5,48 @@ weight: 5
 chapter: false
 pre: " <b> 5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# Secure Hybrid Access to S3 using VPC Endpoints
+# Deploying the Dental Clinic Management Website on AWS
 
 #### Overview
 
-**AWS PrivateLink** provides private connectivity to AWS services from VPCs and your on-premises networks, without exposing your traffic to the Public Internet.
+In this workshop, I will demonstrate the deployment process of the **Dental Clinic Management Website** on the **Amazon Web Services (AWS)** cloud platform.
 
-In this lab, you will learn how to create, configure, and test VPC endpoints that enable your workloads to reach AWS services without traversing the Public Internet.
+The project is designed to **address the limitations of traditional dental clinic management**, including:
 
-You will create two types of endpoints to access Amazon S3: a Gateway VPC endpoint, and an Interface VPC endpoint. These two types of VPC endpoints offer different benefits depending on if you are accessing Amazon S3 from the cloud or your on-premises location
-+ **Gateway** - Create a gateway endpoint to send traffic to Amazon S3 or DynamoDB using private IP addresses.You route traffic from your VPC to the gateway endpoint using route tables.
-+ **Interface** - Create an interface endpoint to send traffic to endpoint services that use a Network Load Balancer to distribute traffic. Traffic destined for the endpoint service is resolved using DNS.
+- Managing appointments manually using paper or spreadsheets, which can easily lead to scheduling conflicts and data loss.
+- Requiring patients to call or visit the clinic directly to book appointments, resulting in inconvenience for both patients and clinic staff.
+- Difficulty in managing dentists, services, appointments, and patient information within a centralized system.
+- Limited capability to monitor system performance and application health as the number of users increases.
+- Challenges in scaling and maintaining applications deployed on traditional on-premises infrastructure.
 
-#### Content
+To overcome these challenges, the system is built using a **3-Tier Architecture**, with **ReactJS** as the Frontend, **Spring Boot** as the Backend, and **Amazon DynamoDB** as the NoSQL database. Deploying the application on AWS provides improved scalability, high availability, enhanced security, and simplified infrastructure management.
 
-1. [Workshop overview](5.1-Workshop-overview)
-2. [Prerequiste](5.2-Prerequiste/)
-3. [Access S3 from VPC](5.3-S3-vpc/)
-4. [Access S3 from On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (Bonus)](5.5-Policy/)
-6. [Clean up](5.6-Cleanup/)
+Throughout this workshop, readers will learn how to deploy the application step by step on AWS, including preparing the cloud environment, deploying the Frontend and Backend, configuring database and storage services, implementing security features, monitoring system performance, testing the application, and cleaning up AWS resources after deployment.
+
+The AWS services used in this workshop include:
+
+- Amazon EC2
+- AWS Amplify
+- Amazon DynamoDB
+- Amazon S3
+- Amazon CloudFront
+- Amazon Route 53
+- AWS WAF
+- AWS Secrets Manager
+- AWS Key Management Service (KMS)
+- Amazon CloudWatch
+- Amazon SNS
+- Amazon SES
+- AWS Identity and Access Management (IAM)
+
+#### Contents
+
+1. [Introduction](5.1-Workshop-overview/)
+2. [Prerequisites](5.2-Prerequiste/)
+3. [Configure DynamoDB](5.3-Configure-DynamoDB/)
+4. [Configure Amazon S3](5.4-Configure-S3/)
+5. [Configure Amazon SES & SNS](5.5-Configure-SES/)
+6. [Deploy Backend on EC2](5.6-Deploy-EC2/)
+7. [System Testing](5.7-System-Testing/)
+8. [Resource Cleanup](5.8-Cleanup/)
