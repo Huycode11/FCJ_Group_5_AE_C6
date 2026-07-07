@@ -41,4 +41,4 @@ Document link:
 
 https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html
 
-![Picture](/images/Blog3.jpg)
+![Picture](/FCJ_Group_5_AE_C6/images/Blog3.jpg)

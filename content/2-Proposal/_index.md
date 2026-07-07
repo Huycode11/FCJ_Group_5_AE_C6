@@ -81,7 +81,7 @@ Sensitive configuration data is securely managed using **AWS Secrets Manager** a
 
 **Amazon CloudWatch** monitors system resources, while **Amazon SNS** and **Amazon SES** deliver alerts and appointment confirmation emails.
 
-![Dental Clinic Architecture](/images/2-Proposal/drawio.png)
+![Dental Clinic Architecture](/FCJ_Group_5_AE_C6/images/2-Proposal/drawio.png)
 
 ### AWS Services Used
 

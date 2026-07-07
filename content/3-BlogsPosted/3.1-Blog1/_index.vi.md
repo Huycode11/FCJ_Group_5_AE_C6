@@ -44,4 +44,4 @@ Thông qua bài này, mình hiểu hơn rằng trước khi đưa một hệ th�
 Link tài liệu AWS có hình kiến trúc:
 https://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/architecture-overview.html
 
-![Ảnh](/images/Blog1.jpg)
+![Ảnh](/FCJ_Group_5_AE_C6/images/Blog1.jpg)

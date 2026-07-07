@@ -81,7 +81,7 @@ Thông tin nhạy cảm được quản lý bởi AWS Secrets Manager và AWS KM
 
 CloudWatch theo dõi hoạt động hệ thống, SNS và Amazon SES gửi cảnh báo cũng như email xác nhận đặt lịch.
 
-![Dental Clinic Architecture](/images/2-Proposal/drawio.png)
+![Dental Clinic Architecture](/FCJ_Group_5_AE_C6/images/2-Proposal/drawio.png)
 
 ### Dịch vụ AWS sử dụng
 
