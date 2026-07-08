@@ -6,23 +6,25 @@ chapter: false
 pre: " <b> 5. </b> "
 ---
 
-# Deploying the Dental Clinic Management Website on AWS
+# Deploying the Dental Clinic Management System on AWS
 
 #### Overview
 
-In this workshop, I will demonstrate the deployment process of the **Dental Clinic Management Website** on the **Amazon Web Services (AWS)** cloud platform.
+In this workshop, we will walk through the deployment of the **Dental Clinic Management System** on the **Amazon Web Services (AWS)** cloud platform.
 
-The project is designed to **address the limitations of traditional dental clinic management**, including:
+The project was developed to address the limitations of traditional dental clinic management, including:
 
-- Managing appointments manually using paper or spreadsheets, which can easily lead to scheduling conflicts and data loss.
-- Requiring patients to call or visit the clinic directly to book appointments, resulting in inconvenience for both patients and clinic staff.
-- Difficulty in managing dentists, services, appointments, and patient information within a centralized system.
-- Limited capability to monitor system performance and application health as the number of users increases.
-- Challenges in scaling and maintaining applications deployed on traditional on-premises infrastructure.
+- Managing appointments using paper records or spreadsheets, which can lead to scheduling conflicts and data loss.
+- Patients having to call or visit the clinic in person to book appointments, resulting in inconvenience for both patients and staff.
+- Difficulty managing doctors, services, appointments, and patient information within a single system.
+- Limited monitoring and visibility into system performance as the number of users increases.
+- Challenges in scaling and maintaining applications hosted on traditional on-premises infrastructure.
 
-To overcome these challenges, the system is built using a **3-Tier Architecture**, with **ReactJS** as the Frontend, **Spring Boot** as the Backend, and **Amazon DynamoDB** as the NoSQL database. Deploying the application on AWS provides improved scalability, high availability, enhanced security, and simplified infrastructure management.
+To overcome these challenges, the system is designed using a **3-Tier Architecture**, with **ReactJS** as the Frontend, **Spring Boot** as the Backend, and **Amazon DynamoDB** as the NoSQL database.
 
-Throughout this workshop, readers will learn how to deploy the application step by step on AWS, including preparing the cloud environment, deploying the Frontend and Backend, configuring database and storage services, implementing security features, monitoring system performance, testing the application, and cleaning up AWS resources after deployment.
+Deploying the application on AWS provides scalability, high availability, enhanced security, and reduced infrastructure management overhead.
+
+Throughout this workshop, you will learn how to deploy the complete application on AWS, including preparing the environment, deploying the Frontend and Backend, configuring the database, integrating storage and notification services, deploying the application on Amazon EC2, verifying the system, and cleaning up AWS resources.
 
 The AWS services used in this workshop include:
 
@@ -34,19 +36,19 @@ The AWS services used in this workshop include:
 - Amazon Route 53
 - AWS WAF
 - AWS Secrets Manager
-- AWS Key Management Service (KMS)
+- AWS Key Management Service (AWS KMS)
 - Amazon CloudWatch
-- Amazon SNS
-- Amazon SES
+- Amazon Simple Notification Service (Amazon SNS)
+- Amazon Simple Email Service (Amazon SES)
 - AWS Identity and Access Management (IAM)
 
 #### Contents
 
 1. [Introduction](5.1-Workshop-overview/)
 2. [Prerequisites](5.2-Prerequiste/)
-3. [Configure DynamoDB](5.3-Configure-DynamoDB/)
+3. [Configure Amazon DynamoDB](5.3-Configure-DynamoDB/)
 4. [Configure Amazon S3](5.4-Configure-S3/)
 5. [Configure Amazon SES & SNS](5.5-Configure-SES/)
-6. [Deploy Backend on EC2](5.6-Deploy-EC2/)
-7. [System Testing](5.7-System-Testing/)
-8. [Resource Cleanup](5.8-Cleanup/)
+6. [Deploy the Backend on Amazon EC2](5.6-Deploy-EC2/)
+7. [System Verification](5.7-System-Testing/)
+8. [Clean Up Resources](5.8-Cleanup/)

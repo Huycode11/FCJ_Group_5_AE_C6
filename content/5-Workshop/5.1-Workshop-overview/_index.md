@@ -34,3 +34,23 @@ The workshop covers the deployment and configuration of the following AWS servic
 By following this workshop, readers will learn how to prepare the AWS environment, deploy both frontend and backend applications, configure database and storage services, implement security best practices, monitor system performance, and perform resource cleanup after deployment.
 
 ![AWS Architecture](/FCJ_Group_5_AE_C6/images/5-Workshop/5.1-Workshop-overview/drawio.png)
+
+### System Workflow
+
+1. **Users/Doctors** access the website through the domain managed by **Amazon Route 53**.
+
+2. **Amazon Route 53** routes incoming requests to **Amazon CloudFront**, providing faster content delivery and low-latency access.
+
+3. **AWS WAF** inspects and filters incoming requests before they reach CloudFront, protecting the application against threats such as SQL Injection (SQLi), Cross-Site Scripting (XSS), and abnormal traffic.
+
+4. **Amazon CloudFront** delivers the ReactJS frontend hosted on **AWS Amplify** and serves static assets stored in **Amazon S3**.
+
+5. When users perform operations such as logging in, booking appointments, or accessing application features, the **Frontend (AWS Amplify)** sends API requests to the **Application Load Balancer (ALB)**.
+
+6. **Application Load Balancer (ALB)** forwards incoming requests to the **Amazon EC2** instance running the Spring Boot backend application.
+
+7. **Amazon EC2** processes business logic, including user authentication, doctor management, service management, appointment scheduling, and other backend operations.
+
+8. During request processing, **Amazon EC2** stores and retrieves images from **Amazon S3**, and uses **Amazon SES** and **Amazon SNS** to send email notifications and system alerts when required.
+
+9. Finally, **Amazon EC2** reads and writes application data to **Amazon DynamoDB**. At the same time, **Amazon CloudWatch** monitors system performance and triggers notifications through **Amazon SNS** whenever configured thresholds or alarms are reached.

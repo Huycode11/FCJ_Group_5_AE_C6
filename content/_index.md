@@ -15,11 +15,11 @@ chapter: false
 
 &emsp; **Email:** phamvanhuyhuy2020@gmai.com
 
-&emsp; **University:** Ho Chi Minh City University of Technology and Education
+&emsp; **University:** HOChiMinh City University of Technology
 
 &emsp; **Major:** Information Technology
 
-&emsp; **Class:** AWS082025
+&emsp; **Class:** 22DTHC6
 
 &emsp; **Internship Company:** Amazon Web Services Viet Nam Company Limited
 

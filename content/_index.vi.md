@@ -14,7 +14,7 @@ chapter: false
 
 &emsp; **Email:** phamvanhuyhuy2020@gmail.com
 
-&emsp; **Trường:** Đại học Công Nghệ TP.HCM
+&emsp; **Trường:** Đại học Công Nghệ TP.HCM - Huetch
 
 &emsp; **Ngành:** Công nghệ thông tin
 
