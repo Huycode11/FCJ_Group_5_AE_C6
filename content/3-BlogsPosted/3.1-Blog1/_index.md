@@ -26,7 +26,7 @@ A high-quality application should not only function correctly—it should also b
 <br>&emsp;How many concurrent users can the system handle?
 <br>&emsp;Does the API response time increase as the request volume grows?
 <br>&emsp;Which component becomes the performance bottleneck?
-<br>&emsp;Is it necessary to scale additional resources?
+<br>&emsp;Is it necessary to scale additional resources?  
 <br>&emsp;Can the system remain stable during extended periods of heavy load?
 
 In my opinion, this is an excellent topic for anyone learning AWS because it brings together several essential cloud concepts, including Containers, Serverless Computing, Monitoring, Performance Testing, and Cloud Architecture.
