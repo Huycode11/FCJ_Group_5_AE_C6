@@ -6,12 +6,12 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
-# Dental Clinic System
+# Dental Clinic Management System
 ## Website đặt lịch và quản lý phòng khám nha khoa trên nền tảng AWS Cloud
 
 ### 1. Tóm tắt điều hành
 
-Dental Clinic System là hệ thống website giúp bệnh nhân dễ dàng đặt lịch khám nha khoa trực tuyến, tra cứu dịch vụ, theo dõi lịch hẹn và nhận thông báo từ phòng khám. Đồng thời, hệ thống hỗ trợ bác sĩ và quản trị viên quản lý lịch khám, dịch vụ, hồ sơ bệnh nhân và hoạt động của phòng khám.
+Dental Clinic Management System là hệ thống website giúp bệnh nhân dễ dàng đặt lịch khám nha khoa trực tuyến, tra cứu dịch vụ, theo dõi lịch hẹn và nhận thông báo từ phòng khám. Đồng thời, hệ thống hỗ trợ bác sĩ và quản trị viên quản lý lịch khám, dịch vụ, hồ sơ bệnh nhân và hoạt động của phòng khám.
 
 Hệ thống được xây dựng theo kiến trúc Cloud Native trên AWS nhằm đảm bảo tính bảo mật, khả năng mở rộng và hiệu năng cao. Frontend được triển khai bằng React thông qua AWS Amplify, Backend sử dụng Spring Boot chạy trên Amazon EC2, dữ liệu lưu trữ trên Amazon DynamoDB và Amazon S3, kết hợp các dịch vụ CloudWatch, SNS, SES, WAF và Secrets Manager để đảm bảo vận hành ổn định.
 
@@ -31,7 +31,7 @@ Hiện nay nhiều phòng khám nha khoa vẫn quản lý lịch khám bằng đ
 
 #### Giải pháp
 
-Dental Clinic System cung cấp nền tảng đặt lịch trực tuyến hoạt động trên AWS Cloud.
+Dental Clinic Management System cung cấp nền tảng đặt lịch trực tuyến hoạt động trên AWS Cloud.
 
 Người dùng có thể:
 

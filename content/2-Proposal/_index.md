@@ -6,14 +6,14 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
-# Dental Clinic System
+# Dental Clinic Management System
 ## Dental Clinic Appointment and Management Website on AWS Cloud
 
 ### 1. Executive Summary
 
-The **Dental Clinic System** is a web-based application that enables patients to book dental appointments online, browse available services, track appointment status, and receive notifications from the clinic. The system also assists dentists and administrators in managing appointments, dental services, patient records, and daily clinic operations.
+The **Dental Clinic Management System** is a web-based application that enables patients to book dental appointments online, browse available services, track appointment status, and receive notifications from the clinic. The System also assists dentists and administrators in managing appointments, dental services, patient records, and daily clinic operations.
 
-The system is built on a **Cloud Native Architecture** using AWS services to provide high availability, security, scalability, and performance. The frontend is deployed using **AWS Amplify**, while the backend is developed with **Spring Boot** and hosted on **Amazon EC2**. Application data is stored in **Amazon DynamoDB**, medical images and uploaded files are stored in **Amazon S3**, and services such as **CloudWatch, SNS, SES, AWS WAF, IAM, Secrets Manager, and AWS KMS** are integrated to ensure reliable and secure operation.
+The System is built on a **Cloud Native Architecture** using AWS services to provide high availability, security, scalability, and performance. The frontend is deployed using **AWS Amplify**, while the backend is developed with **Spring Boot** and hosted on **Amazon EC2**. Application data is stored in **Amazon DynamoDB**, medical images and uploaded files are stored in **Amazon S3**, and services such as **CloudWatch, SNS, SES, AWS WAF, IAM, Secrets Manager, and AWS KMS** are integrated to ensure reliable and secure operation.
 
 ---
 
@@ -26,12 +26,12 @@ Many dental clinics still manage appointments manually through phone calls or pa
 - Difficult appointment management.
 - Appointment conflicts and scheduling errors.
 - Inefficient patient information management.
-- No automatic notification system.
+- No automatic notification System.
 - Limited scalability as the number of patients increases.
 
 ### Proposed Solution
 
-The **Dental Clinic System** provides a cloud-based appointment management platform running on AWS Cloud.
+The **Dental ClinicManagement System** provides a cloud-based appointment management platform running on AWS Cloud.
 
 Patients can:
 
@@ -54,7 +54,7 @@ Administrators can:
 - Manage dentists.
 - Manage dental services.
 - Manage appointments.
-- Monitor overall system activities.
+- Monitor overall System activities.
 
 ### Benefits
 
@@ -69,7 +69,7 @@ Administrators can:
 
 ## 3. Solution Architecture
 
-The system follows a **Cloud Native Architecture** on AWS.
+The System follows a **Cloud Native Architecture** on AWS.
 
 The frontend is deployed using **AWS Amplify**, together with **Amazon Route 53**, **Amazon CloudFront**, and **AWS WAF** to improve performance and protect the application.
 
@@ -79,7 +79,7 @@ Application data is stored in **Amazon DynamoDB**, while images and uploaded fil
 
 Sensitive configuration data is securely managed using **AWS Secrets Manager** and encrypted with **AWS KMS**.
 
-**Amazon CloudWatch** monitors system resources, while **Amazon SNS** and **Amazon SES** deliver alerts and appointment confirmation emails.
+**Amazon CloudWatch** monitors System resources, while **Amazon SNS** and **Amazon SES** deliver alerts and appointment confirmation emails.
 
 ![Dental Clinic Architecture](/FCJ_Group_5_AE_C6/images/2-Proposal/drawio.png)
 
@@ -96,7 +96,7 @@ Sensitive configuration data is securely managed using **AWS Secrets Manager** a
 - **AWS Secrets Manager:** Securely stores sensitive credentials such as JWT secrets and API keys.
 - **AWS Key Management Service (KMS):** Encrypts sensitive data and manages encryption keys.
 - **Amazon CloudWatch:** Collects logs and monitors application performance.
-- **Amazon SNS:** Sends system notifications and operational alerts.
+- **Amazon SNS:** Sends System notifications and operational alerts.
 - **Amazon SES:** Sends appointment confirmations, reminders, and email notifications.
 - **AWS Identity and Access Management (IAM):** Controls user permissions and access to AWS resources.
 
@@ -150,8 +150,7 @@ The project is divided into four main phases, from requirement analysis to deplo
 
 3. **AWS Deployment:** Deploy the frontend using AWS Amplify and the backend on Amazon EC2. Configure Application Load Balancer (ALB), Amazon Route 53, Amazon CloudFront, and AWS WAF to improve performance, availability, and security.
 
-4. **Testing, Optimization, and Operation:** Perform functional testing, security testing, and performance testing. Monitor the system using Amazon CloudWatch, configure Amazon SNS and Amazon SES for notifications and email confirmations, and optimize both cost and system performance before production deployment.
-
+4. **Testing, Optimization, and Operation:** Perform functional testing, security testing, and performance testing. Monitor the System using Amazon CloudWatch, configure Amazon SNS and Amazon SES for notifications and email confirmations, and optimize both cost and System performance before production deployment.
 ### Technical Requirements
 
 **Frontend**
@@ -265,7 +264,7 @@ Infrastructure costs are estimated using the **AWS Pricing Calculator**.
 
 ### Mitigation Strategy
 
-- Monitor the system with Amazon CloudWatch.
+- Monitor the System with Amazon CloudWatch.
 - Protect the application using AWS WAF.
 - Store sensitive credentials in AWS Secrets Manager.
 - Apply IAM role-based access control.
@@ -282,7 +281,7 @@ Infrastructure costs are estimated using the **AWS Pricing Calculator**.
 
 ## 8. Expected Outcomes
 
-- Successfully develop an online dental appointment management system.
+- Successfully develop an online dental appointment management System.
 - Deploy a stable and secure application on AWS Cloud.
 - Improve appointment management efficiency.
 - Enhance patient experience.
