@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-During my internship at **Amazon Web Services Vietnam Company Limited** from **April 17, 2026** to **July 10, 2026**, I had the opportunity to explore AWS cloud services, participate in hands-on training, and deploy a real-world application on the Amazon Web Services platform.
+During my internship at **Amazon Web Services Vietnam Company Limited** from **April 17, 2026** to **July 30, 2026**, I had the opportunity to explore AWS cloud services, participate in hands-on training, and deploy a real-world application on the Amazon Web Services platform.
 
 During the internship, I worked on the **Dental Clinic Management System** project by utilizing AWS services such as **Amazon EC2, Amazon DynamoDB, Amazon S3, Amazon CloudFront, Amazon SES, Amazon SNS, Amazon CloudWatch, and AWS Identity and Access Management (IAM)** to build, deploy, and operate the system. In addition, I enhanced my programming skills with **Spring Boot** and **ReactJS**, gained experience in designing cloud architectures on AWS, deploying applications using Docker, testing APIs with Postman, managing source code with Git/GitHub, and writing technical documentation and reports.
 

@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-Trong suốt thời gian thực tập tại **Công ty TNHH Amazon Web Services Viet Nam** từ **17/04/2026** đến **10/07/2026**, tôi đã có cơ hội tiếp cận với các dịch vụ điện toán đám mây của AWS, tham gia quá trình học tập và thực hành triển khai một hệ thống thực tế trên nền tảng Amazon Web Services.
+Trong suốt thời gian thực tập tại **Công ty TNHH Amazon Web Services Viet Nam** từ **17/04/2026** đến **30/07/2026**, tôi đã có cơ hội tiếp cận với các dịch vụ điện toán đám mây của AWS, tham gia quá trình học tập và thực hành triển khai một hệ thống thực tế trên nền tảng Amazon Web Services.
 
 Trong thời gian thực tập, tôi đã thực hiện dự án **Dental Clinic Management System**, áp dụng các dịch vụ như **Amazon EC2, Amazon DynamoDB, Amazon S3, Amazon CloudFront, Amazon SES, Amazon SNS, Amazon CloudWatch và IAM** để xây dựng, triển khai và vận hành hệ thống. Bên cạnh đó, tôi cũng nâng cao được các kỹ năng về lập trình với **Spring Boot** và **ReactJS**, thiết kế kiến trúc hệ thống trên AWS, triển khai ứng dụng bằng Docker, kiểm thử API bằng Postman, sử dụng Git/GitHub để quản lý mã nguồn, cũng như kỹ năng viết tài liệu kỹ thuật và báo cáo.
 
