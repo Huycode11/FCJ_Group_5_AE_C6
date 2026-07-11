@@ -13,7 +13,7 @@ In this section, the team provides the source code and demonstration materials f
 
 The complete source code of the project is available on GitHub:
 
-👉 [View the source code on GitHub](https://github.com/Huycode11/FCJ_Group_5_AE_C6)
+👉 [View the source code on GitHub](https://github.com/Huycode11/Website_dental_services)
 
 ## Demo and Project Resources
 

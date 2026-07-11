@@ -11,7 +11,7 @@ Trong phần này, nhóm cung cấp mã nguồn dự án và tài liệu Demo c�
 
 Mã nguồn đầy đủ của dự án được lưu trữ trên GitHub:
 
-👉 [Xem mã nguồn trên GitHub](https://github.com/Huycode11/FCJ_Group_5_AE_C6)
+👉 [Xem mã nguồn trên GitHub](https://github.com/Huycode11/Website_dental_services)
 
 ## Demo và tài liệu dự án
 
